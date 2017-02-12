@@ -51,7 +51,7 @@ public class Adapter implements Runnable {
 
 			mTimeSpan = System.currentTimeMillis() - mStartTime;//지나간 시간 저장
 			mTimeShow = mTimeRemain - mTimeSpan;
-			
+		
 			if(mTimeSpan % interval ==0){
 				mTickListener.actionTick(mTimeShow);
 			}
