@@ -1,9 +1,7 @@
 package control;
 
 import java.util.EventListener;
-
 import javax.swing.JLabel;
-
 import routedeventhendler.StopwatchTickListener;
 
 public class Adapter implements Runnable {
