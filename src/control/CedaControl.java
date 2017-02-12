@@ -111,7 +111,7 @@ public class CedaControl {
 		}
 	};
 	
-	private StopwatchTickListener mTickListener = new StopwatchTickListener(){
+	/*private StopwatchTickListener mTickListener = new StopwatchTickListener(){
 		public void actionTick(long timeRemain){
 			
 			int milli = (int)(timeRemain * 0.1) % 100;
@@ -126,5 +126,18 @@ public class CedaControl {
 				mCedaView.setTC(1);
 			}
 		}
-	};
+	};*/
+	
+	private StopwatchTickListener mTickListener = (long timeRemain) ->{
+		int milli = (int)(timeRemain * 0.1) % 100;
+		int second = (int)(timeRemain *0.001) % 60;
+		int minute = (int)(timeRemain *0.001/60)%60;
+		
+		mCedaView.setTime(minute, second, milli);
+		
+		if (timeRemain <30000){
+			mCedaView.setTC(2);
+		}else if(timeRemain>=30000 && timeRemain<60000){
+			mCedaView.setTC(1);
+		}	};
 }
