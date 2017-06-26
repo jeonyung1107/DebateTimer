@@ -47,5 +47,5 @@ Temporary Items
 .apdisk
 
 #Java Class File
-*.class
+.class
 

@@ -130,14 +130,6 @@ public class CedaView extends JFrame {
 		addGrid(mPane,gbl,gbc,bPause,2,2,1,1,1,1);
 		addGrid(mPane,gbl,gbc,bNext,3,2,1,1,1,1);
 		
-		//gbc.fill = GridBagConstraints.NONE;
-		//addGrid(pTime,gbl,gbc,lMinute,0,0,2,1,0,0);
-		//addGrid(pTime,gbl,gbc,l1,1,0,1,1,0,0);
-		//addGrid(pTime,gbl,gbc,lSecond,2,0,2,1,0,0);
-		//addGrid(pTime,gbl,gbc,l2,3,0,1,1,0,0);
-		//gbc.anchor = GridBagConstraints.SOUTH;
-		//addGrid(pTime,gbl,gbc,lMilli,4,0,2,1,1,1);
-		
 	}
 	
 	 private void addGrid(JPanel pane, GridBagLayout gbl, GridBagConstraints gbc, Component c,  

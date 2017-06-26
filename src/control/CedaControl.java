@@ -68,8 +68,6 @@ public class CedaControl {
 			if(e.getActionCommand() == CedaView.bP){
 				mAdapter[orderNum%12].stop();
 				mT.interrupt();
-				//System.out.println(String.valueOf(mAdapter[orderNum].getTimeSpan()));
-				//System.out.println(String.valueOf(mAdapter[orderNum].getTimeRemain()));
 				
 			}else if(e.getActionCommand() ==CedaView.bS){
 				mT = new Thread(mAdapter[orderNum%12]);
